@@ -1,0 +1,3 @@
+- insert:
+    - id: goal-create-ask-guard
+      name: '@argszero/dsh-goal-create-ask-guard'
