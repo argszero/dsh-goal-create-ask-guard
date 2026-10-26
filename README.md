@@ -30,6 +30,9 @@ the shipped tool body unchanged.
 dsh plugin --profile <profile> add github:argszero/dsh-goal-create-ask-guard
 ```
 
+The package is not on the npm registry yet, so `add @argszero/dsh-goal-create-ask-guard`
+has nothing to resolve; install it by its GitHub reference.
+
 The bundle patch mounts one row:
 
 ```yaml
