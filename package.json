@@ -1,6 +1,6 @@
 {
   "name": "@argszero/dsh-goal-create-ask-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ask a human before create_goal starts an automatic continuation loop, and fail closed where nobody can answer.",
   "type": "module",
   "main": "lib/index.js",
@@ -34,7 +34,7 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-tools": "^0.2.1-rc.4"
+    "@deepseek-ai/dsh-tools": "^0.2.1-rc.3"
   },
   "devDependencies": {
     "@deepseek-ai/cordis": "^4.0.5"
