@@ -1,0 +1,65 @@
+{
+  "mount1": {
+    "installedVersion": "0.1.1",
+    "packageName": "@argszero/dsh-goal-create-ask-guard",
+    "moduleName": "@argszero/dsh-goal-create-ask-guard",
+    "peer": {
+      "@deepseek-ai/dsh-tools": "^0.2.1-rc.3"
+    },
+    "patchEntry": "- insert:\n    - id: goal-create-ask-guard\n      name: '@argszero/dsh-goal-create-ask-guard'"
+  },
+  "controlUnguarded": {
+    "goal": {
+      "objective": "prepare the conference submission",
+      "phase": "active",
+      "activation": "armed",
+      "roundsStarted": 0,
+      "maxGoalRounds": 40,
+      "revision": 1
+    },
+    "isError": false,
+    "approvalRequests": 0
+  },
+  "mountedAsk": {
+    "decision": "allowed",
+    "goal": {
+      "objective": "prepare the conference submission",
+      "phase": "active",
+      "activation": "armed",
+      "roundsStarted": 0,
+      "maxGoalRounds": 40,
+      "revision": 1
+    },
+    "approvalRequests": 1,
+    "approvalReason": "create_goal starts an automatic continuation loop for this session",
+    "displayReason": {
+      "en": "The model wants to create a goal. A goal keeps working in automatic rounds until it is complete, paused, or blocked. Approve only if you want that.",
+      "zh": "模型想要创建一个 goal。goal 会自动按轮次持续工作，直到完成、暂停或被阻塞。仅当你确实希望如此时才批准。"
+    }
+  },
+  "mountedNoService": {
+    "isError": true,
+    "goal": null,
+    "createEvents": 0,
+    "text": "{\"isError\":true,\"error\":{\"message\":\"create_goal starts an automatic continuation loop for this session\"},\"content\":[{\"type\":\"text\",\"text\":\"Error: create_goal starts an automatic continuation loop for this session\"}]}"
+  },
+  "mountedNoAnswerer": {
+    "isError": true,
+    "goal": null,
+    "createEvents": 0,
+    "approvalRequests": 0,
+    "text": "{\"isError\":true,\"error\":{\"message\":\"tool \\\"create_goal\\\" requires approval, but no approval channel is available\"},\"content\":[{\"type\":\"text\",\"text\":\"Error: tool \\\"create_goal\\\" requires approval, but no approval channel is available\"}]}"
+  },
+  "mountedAllow": {
+    "isError": false,
+    "goal": {
+      "objective": "prepare the conference submission",
+      "phase": "active",
+      "activation": "armed",
+      "roundsStarted": 0,
+      "maxGoalRounds": 40,
+      "revision": 1
+    },
+    "approvalRequests": 0
+  }
+}
